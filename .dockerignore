@@ -1,0 +1,4 @@
+Dockerfile
+*/temp*
+*/*/temp*
+temp?

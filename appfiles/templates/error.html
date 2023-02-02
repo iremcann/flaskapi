@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Distance {% endblock %}
+
+{% block content %}
+
+<section style="background-color:blueviolet; height: 100vh;">
+    <div class="container" style="height: 100%;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+          <head>
+            <title>Hata</title>
+          </head>
+          <body>
+            <h1>{{ message }}</h1>
+              <form action="{{ url_for('distance') }}" method="post">
+                <label>Şehir 1:</label>
+                <input type="text" name="city1" value="{{city1}}">
+                <label>Şehir 2:</label>
+                <input type="text" name="city2" value="{{city2}}">
+                <input type="submit" value="Yeniden dene">
+              </form>
+          </body>
+        </div>
+  
+      </div>
+  
+  </section>
+  
+{% endblock %}
